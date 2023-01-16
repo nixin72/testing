@@ -1,0 +1,5 @@
+{:tasks
+ {:requires ([babashka.process :as ps])
+  test (ps/process {:inherit true} "./test.sh")}
+ }
+
